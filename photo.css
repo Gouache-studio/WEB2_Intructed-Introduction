@@ -1,0 +1,100 @@
+#header{
+    text-align:center;
+    background-color: white;
+}
+#header h1 {
+    font-size: 50px;
+    border-bottom: 5px solid black;
+    margin-top: 0px;
+}
+.title{
+    text-decoration: none;
+    color: black;
+}
+
+/* 메인그리드 레이아웃 설정 150 1fr 150px */
+#main{
+    display:grid;
+    grid-template-columns: 150px 1fr 150px;
+    padding-top: 0px;
+    padding-bottom : 0px;
+    margin: 0px;
+}
+#side_left{
+    background-color: white;
+}
+
+#contents{
+    background-color: #F2F3F4;
+    padding-top: 0px;
+    padding-left: 40px;
+}
+
+/* 1. 사진첩 레이아웃 크기 결정 
+가로폭 900px 양옆 마진은 반응에 따라 자동으로 결정. */
+.photo_list{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/* 2. 각 사진마다의 레이아웃 정사각형으로 설정
+-사진마다의 구분은 가로폭 800px의 30%로 디스플레이는 블록으로 설정 -> 세로
+                  이때 float으로 왼쪽정렬, 각 사진마다의 마진 오른쪽 왼쪽 10px로 설정 
+-사진은 정사각형이 되려면, 위치를 상대적으로 잡고, padding top을 width와 같은 30%로 설정하면됨. 
+*/
+.photo_box{
+    display: block;
+    float: left;
+    width: 30%;
+    padding-top: 30%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+/* 3. 사진의 중앙부분을 나오게 세팅함
+*/
+.photo_center{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translate(50%, 50%);
+}
+.photo{
+    transform: translate(-50%, -50%);
+}
+
+#side_right{
+    background-color : white;
+}
+#side_right ol {
+    background-color : #0A0A0A;
+    width: 150px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#side_right li a{
+    display: block;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+#side_right li a:hover{
+    background-color : #F2F3F4;
+    color: #0A0A0A;
+}
+
+#footer{
+    display: block;
+    bottom: 0px;
+    text-align: center;
+    font-family: serif;
+    background-color: #F2F3F4;
+}
+

@@ -1,0 +1,74 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+body{
+    min-height: 100%;
+}
+#header{
+    text-align:center;
+}
+#header h1 {
+    font-size: 45px;
+    border-bottom: 5px solid black;
+}
+.title{
+    text-decoration: none;
+    color: black;
+}
+/* ---------------------------------------------------------------------------------- */
+/* 메인그리드 레이아웃 설정 150 1fr 150px */
+#main{
+    display:grid;
+    grid-template-columns: 150px 1fr 150px;
+    padding-top: 0px;
+    padding-bottom : 0px;
+    margin: 0px;
+}
+#side_left{
+    background-color: white;
+}
+/* ----------------------------- */
+#contents{
+    background-color: #F2F3F4;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        min-height: 80%;
+}
+/* ----------------------------- */
+#side_right{
+    background-color : white;
+}
+#side_right ol {
+    background-color : #0A0A0A;
+    width: 150px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#side_right li a{
+    display: block;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+#side_right li a:hover{
+    background-color : #F2F3F4;
+    color: #0A0A0A;
+}
+/* ----------------------------- */
+#footer{
+    position:absolute;
+    display: block;
+    bottom: 0px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+#footer a{
+    padding: 50px;
+    width: 20px;
+    height: 20px;
+}

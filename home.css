@@ -1,0 +1,106 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+body{
+    min-height: 100%;
+}
+#header{
+    text-align:center;
+    background-color: white;
+}
+#header h1 {
+    font-size: 50px;
+    border-bottom: 5px solid #0A0A0A;
+    margin-top: 0px;
+}
+.title{
+    text-decoration: none;
+    color: #0A0A0A;
+}
+/* ---------------------------------------------------------------------------------- */
+/* 메인그리드 레이아웃 설정 150(사이드) 1fr(콘텐츠) 150px(메뉴바) */
+#main{
+    display:grid;
+    grid-template-columns: 150px 1fr 150px;
+    padding-top: 0px;
+    padding-bottom : 0px;
+    margin: 0px;
+    background-color: white;
+}
+/* ----------------------------- */
+#side_left{
+    background-color: white;
+}
+/* ----------------------------- */
+#contents{
+    background-color: #F2F3F4;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 80%;
+    text-align:center;
+}
+#contents h2{
+    border-top: 2px solid gray;
+}
+.box{
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+#box h2{
+    padding-top: 70px;
+}
+
+.connect_box1{
+    padding-top: 20px;
+}
+.connect_box1 a{
+    padding: 20px;
+}
+
+.connect_box2{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.text_img_box{
+    float: left;
+    width: calc(100%/3 - 20px);
+    margin:0 10px;
+}
+/* ----------------------------- */
+#side_right{
+    background-color : white;
+}
+#side_right ol {
+    background-color : #0A0A0A;
+    width: 150px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#side_right li a{
+    display: block;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+#side_right li a:hover{
+    background-color : #F2F3F4;
+    color: #0A0A0A;
+}
+/* ---------------------------------------------------------------------------------- */
+#footer{
+    position:absolute;
+    display: block;
+    bottom: 0px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    margin: 0px;
+}
+

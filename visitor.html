@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="visitor.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1><a class="title" href = "index.html">ㅈㅜㅈㅗㅇㅁㅣㄴ</a></h1> 
+    </div>
+    <div id="main">
+        <div id = "side_left">
+            <!-- 추후 방문자 수나 프로필 간략하게 소개 -->
+        </div>
+        <div id = "contents">
+            <p>
+                <div id="disqus_thread"></div>
+                <script>
+                
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://web1-2.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </p> 
+        </div>
+        <div id = "side_right">
+            <ol>
+                <li><a href = "index.html">HOME</a></li>
+                <li><a href = "profile.html">PROFILE</a></li>
+                <li><a href = "photo.html">PHOTO</a></li>
+                <li><a href = "visitor.html">VISTOR</a></li>
+            </ol>
+        </div>
+    </div>
+    <div id= "footer">
+        <div class="connect_box1">
+            <a href="https://gouache-studio.tistory.com/"><img src="blog.png" width="20px" height="20px"></a>
+            <a href="https://github.com/Gouache-studio"><img src="github.png" width="20px" height="20px"></a>
+            <a><img src="email.png" width="20px" height="20px"onclick=alert("zoobellmint@kakao.com")></a>
+            <a><img src="call.png" width="20px" height="20px" onclick=alert("010-xxxx-xxxx")></a>
+        </div>
+    </div>
+
+</body>
+</html>

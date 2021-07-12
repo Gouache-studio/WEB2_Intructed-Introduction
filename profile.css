@@ -1,0 +1,79 @@
+#header{
+    text-align:center;
+    background-color: white;
+}
+#header h1 {
+    font-size: 50px;
+    border-bottom: 5px solid black;
+    margin-top: 0px;
+}
+.title{
+    text-decoration: none;
+    color: black;
+}
+/* ---------------------------------------------------------------------------------- */
+/* 메인그리드 레이아웃 설정 150 1fr 150px */
+#main{
+    display:grid;
+    grid-template-columns: 150px 1fr 150px;
+    padding-top: 0px;
+    padding-bottom : 0px;
+    margin: 0px;
+    background-color: black;
+    min-height: 80%;
+}
+#side_left{
+    background-color: white;
+}
+#contents{
+    background-color: #F2F3F4;
+    padding: 20px;
+}
+.container{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ----------------------------- */
+.box{
+    float: left;
+    padding: 0px 30px;
+}
+.box h1{
+    margin: 0px;
+}
+#moto{
+    background-color: black;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 53px;
+}
+/* ----------------------------- */
+#side_right{
+    background-color : white;
+}
+#side_right ol {
+    background-color : #0A0A0A;
+    width: 150px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#side_right li a{
+    display: block;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+#side_right li a:hover{
+    background-color : #F2F3F4;
+    color: #0A0A0A;
+}
+/* ---------------------------------------------------------------------------------- */
+#footer{
+    display: block;
+    bottom: 0px;
+    height: 100%;
+    background-color: white;
+}
